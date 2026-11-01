@@ -37,6 +37,8 @@ textarea{min-height:140px;font-family:ui-monospace,monospace;font-size:12px}
 .btn:disabled{opacity:.5}
 .err{color:var(--accent);font-size:13px;min-height:18px;text-align:center}
 .or{color:var(--muted);font-size:13px}
+.tagline{font-family:var(--display);font-size:17px;color:var(--accent);text-align:center;line-height:1.4;margin-top:-8px}
+.foot{text-align:center;font-size:12px;color:var(--muted);padding:10px 16px;border-top:1px solid var(--line)}
 
 /* 상단바 */
 .top{display:flex;align-items:center;gap:10px;padding:12px max(16px,env(safe-area-inset-left)) 12px max(16px,env(safe-area-inset-right));border-bottom:1px solid var(--line)}
@@ -154,6 +156,7 @@ const FIREBASE_CONFIG = {
   <section class="screen start" id="login" hidden>
     <svg class="logo" viewBox="0 0 400 400"><use href="#logo"/></svg>
     <h1>똥똥씨</h1>
+    <div class="tagline">와이파이가 있어야 채팅되는<br>참 쓸모없는 앱</div>
     <p>내 코드 하나로 친구랑 채팅하고<br>단톡방도 만들 수 있어요</p>
     <div class="field">
       <label for="nickIn">닉네임</label>
@@ -188,6 +191,7 @@ const FIREBASE_CONFIG = {
       <button id="aJoin"><b>🚪</b>단톡방 들어가기</button>
     </div>
     <div class="rooms" id="rooms"></div>
+    <div class="foot">💩 와이파이가 있어야 채팅되는 참 쓸모없는 앱</div>
   </section>
 
   <!-- 채팅방 -->
